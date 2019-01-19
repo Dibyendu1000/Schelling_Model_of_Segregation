@@ -105,7 +105,7 @@ for i in range(100):
     nodes_w=nx.draw_networkx_nodes(G,pos,node_color='white',nodelist=empty_cells)
     nx.draw_networkx_edges(G,pos)
     nx.draw_networkx_labels(G,pos,labels=labels)
-    plt.savefig('plot_'+str(i)+'.png')
+    plt.savefig('plots\plot_'+str(i)+'.png')
     plt.clf()
     plt.cla()
 print ("Satsfied:",(100-len(unsatisfied_nodes)),"%")
